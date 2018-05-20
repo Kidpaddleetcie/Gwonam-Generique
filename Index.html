@@ -2,22 +2,22 @@
 <head>
 <html lang="fr">
 <meta charset = "UTF-8">
- <script type="text/javascript" src="Gwonam Générique.js"></script>
+<script type="text/javascript" src="Gwonam Générique.js"></script>
 <link rel="stylesheet" href="Gwonam Générique.css" />
 <title>Le générique de Gwonam</title>
-
+</head>
+<body>
 <script>
-var text =prompt ("Il est écrit quoi?");
+a=prompt ("que devra-t'il être écrit?")
 </script>
 
+
 <h1>
-	<a href="" class="typewrite" data-period="2000" data-type='["Ici doit se marquer un texte mais je ne sais pas comment on fait pour mettre une variable dans un data-type! :/"]'>
+	<a href="" class="typewrite" data-period="2000" data-type='[ "Ici sera marqué le texte quand je serais mettre une variable dans le data-type! :/"]'>
     <span class="wrap"></span>
   </a>
 </h1>
-</head>
-<body>
- <script type="text/javascript">
+<script type="text/javascript">
         //<!--
                 document.onmousemove = suitsouris;
                 function suitsouris(evenement)
@@ -32,10 +32,10 @@ var text =prompt ("Il est écrit quoi?");
                                 var x =  evenement.pageX;
                                 var y =  evenement.pageY;
                         }
-                        document.getElementById("main_gwonam").style.left = (x+80)+'px';
-                        document.getElementById("main_gwonam").style.top  = (y-100)+'px';
+                        document.getElementById("MainGwonam").style.left = (x-10)+'px';
+                        document.getElementById("MainGwonam").style.top  = (y+50)+'px';
                 }
         //-->
         </script>
-        <img src="Main Gwonam.png" alt="La main de Gwonam" id="main_gwonam" style="position:absolute;display:block;z-index:5;" />
+<img id="MainGwonam" src="Main Gwonam.png" style="position:absolute;display:block;z-index:5;  -webkit-filter: drop-shadow(5px 2px 5px black); filter: drop-shadow(5px 2px 5px black);">
 </body>

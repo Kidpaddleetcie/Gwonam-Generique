@@ -2,17 +2,40 @@
 <head>
 <html lang="fr">
 <meta charset = "UTF-8">
-<script type="text/javascript" src="ressource/Gwonam Générique.js"></script>
-<link rel="stylesheet" href="ressource/Gwonam Générique.css" />
+<script type="text/javascript" src="Gwonam Générique.js"></script>
+<link rel="stylesheet" href="Gwonam Générique.css" />
 <title>Le générique de Gwonam</title>
-
 </head>
 <body>
+<script>
+a=prompt ("que devra-t'il être écrit?")
+</script>
+
+
 <h1>
-	<a href="" class="typewrite" data-period="2000" data-type='[ "Seul Link <br> peut vaincre <br> Ganon!", "Only Link <br> can defeat <br> Ganon!"]'>
+	<a href="" class="typewrite" data-period="2000" data-type='[ "Ici sera marqué le texte quand je serais mettre une variable dans le data-type! :/"]'>
     <span class="wrap"></span>
   </a>
 </h1>
-
-<img class="MainGwonam" src="ressource/Main Gwonam.png">
+<script type="text/javascript">
+        //<!--
+                document.onmousemove = suitsouris;
+                function suitsouris(evenement)
+                {
+                        if(navigator.appName=="Microsoft Internet Explorer")
+                        {
+                                var x = event.x+document.body.scrollLeft;
+                                var y = event.y+document.body.scrollTop;
+                        }
+                        else
+                        {
+                                var x =  evenement.pageX;
+                                var y =  evenement.pageY;
+                        }
+                        document.getElementById("MainGwonam").style.left = (x-10)+'px';
+                        document.getElementById("MainGwonam").style.top  = (y+50)+'px';
+                }
+        //-->
+        </script>
+<img id="MainGwonam" src="Main Gwonam.png" style="position:absolute;display:block;z-index:5;  -webkit-filter: drop-shadow(5px 2px 5px black); filter: drop-shadow(5px 2px 5px black);">
 </body>
