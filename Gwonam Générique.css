@@ -22,88 +22,11 @@ font-size:3em;
 
 h1 {
 font-family: "Enchanted Land";
+font-size: 75px;
   background-color: #565656;
   text-shadow: 1px 1px 0 rgba(140,140,140,0.6) , -1px -1px 1px rgba(0,0,0,0.67) ;
   -webkit-background-clip: text;
      -moz-background-clip: text;
           background-clip: text;
-}
-
-
-.MainGwonam{
-  animation: maingwonam linear 6s;
-  animation-iteration-count: infinite;
-  transform-origin: 100% 50%;
-  -webkit-animation: maingwonam linear 6s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-transform-origin: 100% 50%;
-  -moz-animation: maingwonam linear 6s;
-  -moz-animation-iteration-count: infinite;
-  -moz-transform-origin: 100% 50%;
-  -o-animation: maingwonam linear 6s;
-  -o-animation-iteration-count: infinite;
-  -o-transform-origin: 100% 50%;
-  -ms-animation: maingwonam linear 6s;
-  -ms-animation-iteration-count: infinite;
-  -ms-transform-origin: 100% 50%;
-}
-
-@keyframes maingwonam{
-  0% {
-    transform:  translate(59px,-116px)  rotate(0deg) ;
-  }
-  47% {
-    transform:  translate(230px,-71px)  rotate(22deg) ;
-  }
-  100% {
-    transform:  translate(85px,-121px)  rotate(0deg) ;
-  }
-}
-
-@-moz-keyframes maingwonam{
-  0% {
-    -moz-transform:  translate(59px,-116px)  rotate(0deg) ;
-  }
-  47% {
-    -moz-transform:  translate(230px,-71px)  rotate(22deg) ;
-  }
-  100% {
-    -moz-transform:  translate(85px,-121px)  rotate(0deg) ;
-  }
-}
-
-@-webkit-keyframes maingwonam {
-  0% {
-    -webkit-transform:  translate(59px,-116px)  rotate(0deg) ;
-  }
-  47% {
-    -webkit-transform:  translate(230px,-71px)  rotate(22deg) ;
-  }
-  100% {
-    -webkit-transform:  translate(85px,-121px)  rotate(0deg) ;
-  }
-}
-
-@-o-keyframes maingwonam {
-  0% {
-    -o-transform:  translate(59px,-116px)  rotate(0deg) ;
-  }
-  47% {
-    -o-transform:  translate(230px,-71px)  rotate(22deg) ;
-  }
-  100% {
-    -o-transform:  translate(85px,-121px)  rotate(0deg) ;
-  }
-}
-
-@-ms-keyframes maingwonam {
-  0% {
-    -ms-transform:  translate(59px,-116px)  rotate(0deg) ;
-  }
-  47% {
-    -ms-transform:  translate(230px,-71px)  rotate(22deg) ;
-  }
-  100% {
-    -ms-transform:  translate(85px,-121px)  rotate(0deg) ;
-  }
+		  width:560px;
 }

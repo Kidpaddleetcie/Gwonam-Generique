@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+<html lang="fr">
+<meta charset = "UTF-8">
+ <script type="text/javascript" src="Gwonam Générique.js"></script>
+<link rel="stylesheet" href="Gwonam Générique.css" />
+<title>Le générique de Gwonam</title>
+
+<script>
+var text =prompt ("Il est écrit quoi?");
+</script>
+
+<h1>
+	<a href="" class="typewrite" data-period="2000" data-type='["Ici doit se marquer un texte mais je ne sais pas comment on fait pour mettre une variable dans un data-type! :/"]'>
+    <span class="wrap"></span>
+  </a>
+</h1>
+</head>
+<body>
+ <script type="text/javascript">
+        //<!--
+                document.onmousemove = suitsouris;
+                function suitsouris(evenement)
+                {
+                        if(navigator.appName=="Microsoft Internet Explorer")
+                        {
+                                var x = event.x+document.body.scrollLeft;
+                                var y = event.y+document.body.scrollTop;
+                        }
+                        else
+                        {
+                                var x =  evenement.pageX;
+                                var y =  evenement.pageY;
+                        }
+                        document.getElementById("main_gwonam").style.left = (x+80)+'px';
+                        document.getElementById("main_gwonam").style.top  = (y-100)+'px';
+                }
+        //-->
+        </script>
+        <img src="Main Gwonam.png" alt="La main de Gwonam" id="main_gwonam" style="position:absolute;display:block;z-index:5;" />
+</body>
