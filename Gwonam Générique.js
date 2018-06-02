@@ -1,4 +1,4 @@
-
+//Ici, c'est la gestion du temps
 var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
@@ -8,7 +8,7 @@ var TxtType = function(el, toRotate, period) {
         this.tick();
         this.isDeleting = false;
     };
-
+//Ici, c'est le coeur de l'effet, on précise qu'on fait lettre par lettre et même le changement de ligne!
     TxtType.prototype.tick = function() {
         var i = this.loopNum % this.toRotate.length;
         var fullTxt = this.toRotate[i];
@@ -39,8 +39,8 @@ var TxtType = function(el, toRotate, period) {
         that.tick();
         }, delta);
     };
-
-    window.onload = function() {
+//Ici,c'est la création de lien entre le typewrite qui sert à annoncer l'utilisation de l'effet, le data-type sert à écrire ce qu'on veut écrire (hé hé hé), le data-period sert à donner un temps gêle entre la dernière lettre inscrite et sa disparition!
+     window.onload = function() {
         var elements = document.getElementsByClassName('typewrite');
         for (var i=0; i<elements.length; i++) {
             var toRotate = elements[i].getAttribute('data-type');
