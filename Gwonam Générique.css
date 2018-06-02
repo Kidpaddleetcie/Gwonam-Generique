@@ -6,8 +6,11 @@
 	}
 
 body {
-
+	overflow:hidden;
+position:fixe;
 background-image: url("Gwonam parchemin.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   padding-top:4em;
     padding-left:4em;
   background-color:#e98815;
@@ -28,5 +31,10 @@ font-size: 75px;
   -webkit-background-clip: text;
      -moz-background-clip: text;
           background-clip: text;
-		  width:560px;
+	float:left;
+	margin-left:-10%;
+		  text-align: left;
+		     padding-right:2em;
+			   padding-top:20px;
+		  width:960px;
 }
