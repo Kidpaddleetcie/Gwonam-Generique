@@ -1,49 +1,48 @@
 <!DOCTYPE html>
+
 <head>
 
-<meta name="keywords" content="gwonam,squalala,kidpaddleetcie,glin" />
-<meta name="new_keywords" content="gwonam,squalala,kidpaddleetcie,glin" />
-<meta http-equiv="content-type" content="text/html" charset="utf-8" />
-<meta name="language" content="fr" />
+    <meta name="keywords" content="gwonam,squalala,kidpaddleetcie,glin" />
+    <meta name="new_keywords" content="gwonam,squalala,kidpaddleetcie,glin" />
+    <meta http-equiv="content-type" content="text/html" charset="utf-8" />
+    <meta name="language" content="fr" />
 
-<meta name="title" content="Le générique de Gwonam!" />
-<meta name="description" content="Le générateur de texte animé sur le parchemin de Gwonam avec un contrôle de sa main!" />
-<script type="text/javascript" src="Gwonam Générique.js"></script>
-<link rel="stylesheet" href="Gwonam Générique.css" />
+    <meta name="title" content="Le générique de Gwonam!" />
+    <meta name="description" content="Le générateur de texte animé sur le parchemin de Gwonam avec un contrôle de sa main!" />
+    <script type="text/javascript" src="assets/js/Gwonam Générique.js"></script>
+    <link rel="stylesheet" href="assets/css/Gwonam Générique.css" />
 </head>
+
 <body>
 
-<script>
-a=prompt ("que devra-t'il être écrit?")
-</script>
+    <script>
+        let a = prompt("que devra-t'il être écrit?")
+    </script>
 
-<h1>
-    <span class="letters">
+    <h1>
+        <span class="letters">
 	<a href="" class="typewrite" data-period="2000" data-type='[ "Ici sera marqué le texte quand je saurais mettre une variable dans le data-type! :/"]'>
     <span class="wrap"></span>
-  </a>
-</h1>
-<script type="text/javascript">
+        </a>
+    </h1>
+    <script type="text/javascript">
         //<!--
-                document.onmousemove = suitsouris;
-                function suitsouris(evenement)
-                {
-                        if(navigator.appName=="Microsoft Internet Explorer")
-                        {
-                                var x = event.x+document.body.scrollLeft;
-                                var y = event.y+document.body.scrollTop;
-                        }
-                        else
-                        {
-                                var x =  evenement.pageX;
-                                var y =  evenement.pageY;
-                        }
-                        document.getElementById("MainGwonam").style.left = (x-10)+'px';
-                        document.getElementById("MainGwonam").style.top  = (y+50)+'px';
-                }
-        //-->
-        </script>
+        document.onmousemove = suitsouris;
 
-<img id="MainGwonam" src="Main Gwonam.png" style="position:absolute;display:block;z-index:5;  -webkit-filter: drop-shadow(5px 2px 5px black); filter: drop-shadow(5px 2px 5px black);">
+        function suitsouris(evenement) {
+            if (navigator.appName == "Microsoft Internet Explorer") {
+                var x = event.x + document.body.scrollLeft;
+                var y = event.y + document.body.scrollTop;
+            } else {
+                var x = evenement.pageX;
+                var y = evenement.pageY;
+            }
+            document.getElementById("MainGwonam").style.left = (x - 10) + 'px';
+            document.getElementById("MainGwonam").style.top = (y + 50) + 'px';
+        }
+        //-->
+    </script>
+
+    <img id="MainGwonam" src="assets/img/Main Gwonam.png" style="position:absolute;display:block;z-index:5;  -webkit-filter: drop-shadow(5px 2px 5px black); filter: drop-shadow(5px 2px 5px black);">
 
 </body>
